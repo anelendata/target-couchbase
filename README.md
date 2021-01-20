@@ -22,6 +22,9 @@ Or you can install the lastest development version from GitHub:
 pip install -U couchbase
 pip install --no-cache-dir https://github.com/anelendata/target-couchbase/archive/master.tar.gz#egg=target-couchbase
 ```
+Note: Please refer to
+[Couchbase documentation](https://docs.couchbase.com/python-sdk/current/hello-world/start-using-sdk.html)
+for the details of installation of couchbase Python SDK.
 
 ## Run
 
@@ -39,7 +42,7 @@ this sample:
 }
 ```
 
-## Run
+## Step 2: Run
 
 target-bigquery can be run with any Singer Target. As example, let use
 [tap-exchangeratesapi](https://github.com/singer-io/tap-exchangeratesapi).
@@ -66,7 +69,7 @@ tap-exchangeratesapi -c tap_config.json | target-couchbase -c target_config.json
 
 ## Original repository
 
-- https://github.com/anelendata/target_couchbase
+- https://github.com/anelendata/target-couchbase
 
 ---
 
