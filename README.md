@@ -44,7 +44,7 @@ this sample:
 }
 ```
 
-## Step 2: Run
+### Step 2: Run
 
 target-bigquery can be run with any Singer Target. As example, let use
 [tap-exchangeratesapi](https://github.com/singer-io/tap-exchangeratesapi).
