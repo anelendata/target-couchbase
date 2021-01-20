@@ -1,8 +1,68 @@
-[![Build Status](https://travis-ci.com/anelendata/target_couchbase.svg?branch=master)](https://travis-ci.com/anelendata/target_couchbase)
-
-# target_couchbase
+# target-couchbase
 
 ## What is it
+
+This is a [Singer](https://singer.io) target that loads JSON-formatted data
+following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md)
+to [Couchbase Server](https://docs.couchbase.com/home/server.html).
+
+## Install
+
+First, make sure Python 3.6 or higher is installed on your system or follow
+these  installation instructions for Mac or Ubuntu.
+
+```
+pip install -U couchbase
+pip install -U target-couchbase
+```
+
+Or you can install the lastest development version from GitHub:
+
+```
+pip install -U couchbase
+pip install --no-cache-dir https://github.com/anelendata/target-couchbase/archive/master.tar.gz#egg=target-couchbase
+```
+
+## Run
+
+### Step 1: Configure
+
+Create a file called target_config.json in your working directory, following
+this sample:
+
+```
+{
+    "cluster": "{{ your-couchbase-server.com }}:8091",
+    "username": "{{ couchbase_username }}",
+    "password": "{{ couchbase_password }}",
+    "bucket": "{{ your-bucket-name }}"
+}
+```
+
+## Run
+
+target-bigquery can be run with any Singer Target. As example, let use
+[tap-exchangeratesapi](https://github.com/singer-io/tap-exchangeratesapi).
+
+```
+pip install tap-exchangeratesapi
+```
+
+And create tap_config.json that looks like:
+
+```
+{
+    "base": "USD",
+    "start_date": "2021-01-11"
+}
+```
+(Adjust your start date. 7 days ago is recommended for the test)
+
+Run:
+
+```
+tap-exchangeratesapi -c tap_config.json | target-couchbase -c target_config.json
+```
 
 ## Original repository
 

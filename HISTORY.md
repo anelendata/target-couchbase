@@ -1,5 +1,5 @@
 ## History
 
-### 0.1.0 (20xx-xx-xx)
+### 0.1.0 (2021-01-19)
 
 Initial release

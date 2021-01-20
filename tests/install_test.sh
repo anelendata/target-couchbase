@@ -20,6 +20,7 @@ python setup.py clean --all;
 rm -fr dist;
 rm -fr build;
 rm -fr $PACKAGE.egg-info;
+pip install -U couchbase
 python setup.py install;
 
 SITE_PKG_DIR="./install_test/lib/python3.6/site-packages"

@@ -29,7 +29,7 @@ setup(
 
     install_requires=[
         "singer-python>=5.2.0",
-        "couchbase==3.0.8",
+        "couchbase>=3.0.8",
         "simplejson==3.11.1",
         "setuptools>=40.3.0",
     ],
