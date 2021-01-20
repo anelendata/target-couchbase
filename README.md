@@ -1,5 +1,7 @@
 # target-couchbase
 
+[target-couchbase](https://raw.githubusercontent.com/anelendata/target-couchbase/master/assets/target-couchbase.png)
+
 ## What is it
 
 This is a [Singer](https://singer.io) target that loads JSON-formatted data
