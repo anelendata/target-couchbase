@@ -1,6 +1,6 @@
 # target-couchbase
 
-[target-couchbase](https://raw.githubusercontent.com/anelendata/target-couchbase/master/assets/target-couchbase.png)
+![target-couchbase](https://raw.githubusercontent.com/anelendata/target-couchbase/master/assets/target-couchbase.png)
 
 ## What is it
 
