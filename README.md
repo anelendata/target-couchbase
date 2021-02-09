@@ -5,7 +5,7 @@
 ## What is it
 
 This is a [Singer](https://singer.io) target that loads JSON-formatted data
-following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md)
+following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/docs/SPEC.md)
 to [Couchbase Server](https://docs.couchbase.com/home/server.html).
 
 ## Install
