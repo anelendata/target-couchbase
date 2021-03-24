@@ -64,6 +64,9 @@ def write_records(cluster, username, password, bucket,
             json_dumps = False
             record, invalids = clean_and_validate(message, schemas, invalids,
                                                   on_invalid_record, json_dumps)
+            # python-couchbase does not like Decimal
+            record_str = json.dumps(record)
+            record = json.loads(record_str, use_decimal=False)
 
             if invalids == 0 or on_invalid_record == "force":
                 record["_stream"] = message.stream
